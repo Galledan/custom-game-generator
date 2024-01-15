@@ -7,6 +7,7 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import TableSortLabel from "@mui/material/TableSortLabel";
 import Paper from "@mui/material/Paper";
+import { usePlayer } from "../../context/PlayerContext/PlayerContext";
 
 function PlayerList() {
   const tableHeaderStyle = {
@@ -14,15 +15,7 @@ function PlayerList() {
     text: "!text-secondary",
   };
 
-  const initialData = [
-    { name: "Galledan", role: { id: 1, rolename: "Mid" }, win: 20, lose: 5 },
-    {
-      name: "Freezenight",
-      role: { id: 2, rolename: "Jungle" },
-      win: 15,
-      lose: 10,
-    },
-  ];
+  const {initialData} = usePlayer()
 
   const [data, setData] = useState(initialData);
   const [order, setOrder] = useState("asc");
