@@ -4,7 +4,7 @@ import Filters from '../../components/Filters/Filters'
 
 function PlayerListPage() {
   return (
-    <div className='pl-page-container h-full mx-20 flex flex-row'>
+    <div className='pl-page-container h-full flex flex-row gap-14'>
       <Filters />
       <PlayerList />
     </div>

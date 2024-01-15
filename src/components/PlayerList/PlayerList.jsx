@@ -11,7 +11,7 @@ import { usePlayer } from "../../context/PlayerContext/PlayerContext";
 
 function PlayerList() {
   const tableHeaderStyle = {
-    bg: "bg-neutral cursor-pointer",
+    bg: "bg-primary cursor-pointer",
     text: "!text-secondary",
   };
 
