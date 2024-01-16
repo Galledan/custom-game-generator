@@ -12,7 +12,7 @@ import { usePlayer } from "../../context/PlayerContext/PlayerContext";
 function PlayerList() {
   const tableHeaderStyle = {
     bg: "bg-primary cursor-pointer",
-    text: "!text-secondary",
+    text: "!text-white",
   };
 
   const {initialData} = usePlayer()
@@ -55,8 +55,8 @@ function PlayerList() {
     handleRequestSort(property);
   };
   return (
-    <TableContainer component={Paper}>
-      <Table className="">
+    <TableContainer className="h-full" component={Paper}>
+      <Table>
         <TableHead>
           <TableRow>
             <TableCell className={tableHeaderStyle.bg} onClick={createSortHandler("name")}>
