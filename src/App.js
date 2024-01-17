@@ -4,6 +4,7 @@ import PlayerListPage from "./pages/PlayerListPage/PlayerListPage";
 import MainPage from "./pages/MainPage/MainPage";
 import Admin from "./pages/Admin/Admin";
 import { PlayerProvider } from "./context/PlayerContext/PlayerContext";
+import Draft from "./pages/Draft/Draft";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path="/" element={<MainPage />} />
           <Route path="/player-list" element={<PlayerListPage />} />
           <Route path="/admin" element={<Admin />} />
+          <Route path="/draft" element={<Draft />} />
         </Routes>
       </PlayerProvider>
     </Router>

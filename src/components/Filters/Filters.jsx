@@ -9,14 +9,15 @@ import Button from "@mui/material/Button";
 
 function Filters() {
   const radioStyle = "!text-white";
+  const inputStyle = "!text-white !border-b-black"
 
   return (
     <div className="filters-container bg-primary flex flex-col gap-9 p-5 min-w-80 justify-center rounded">
-      <div className="input-filters flex flex-col gap-3 justify-center">
-        <TextField label="Nickname" variant="standard" />
-        <TextField label="Win" variant="standard" />
-        <TextField label="Lose" variant="standard" />
-        <TextField label="Winrate" variant="standard" />
+      <div className="input-filters flex flex-col gap-3 justify-center  ">
+        <TextField className={inputStyle} label="Nickname" variant="standard" />
+        <TextField className={inputStyle} label="Win" variant="standard" />
+        <TextField className={inputStyle} label="Lose" variant="standard" />
+        <TextField className={inputStyle} label="Winrate" variant="standard" />
       </div>
       <div className="lane-filter w-4/5 flex justify-center pt-4">
         <FormControl>

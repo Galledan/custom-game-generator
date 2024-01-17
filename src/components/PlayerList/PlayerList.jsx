@@ -12,7 +12,7 @@ import { usePlayer } from "../../context/PlayerContext/PlayerContext";
 function PlayerList() {
   const tableHeaderStyle = {
     bg: "bg-primary cursor-pointer",
-    text: "!text-white",
+    text: "!text-white font-bold",
   };
 
   const {initialData} = usePlayer()
